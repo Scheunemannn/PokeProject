@@ -1,0 +1,17 @@
+.logoLink {
+    color:inherit;
+    text-decoration: none;
+}
+
+.titleLogo {
+    font-size: 22px;
+}
+
+.titleLogo span {
+    color:red;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+}

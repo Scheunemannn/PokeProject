@@ -10,7 +10,7 @@ export default function PokemonCard({name, image, types}) {
 
   const typeHandler = () => {
     if(types[1]) {
-      return types[0].type.name + " | " + types[1].type.name
+      return types[0].type.name
     }
     return types[0].type.name
   }
@@ -21,7 +21,6 @@ export default function PokemonCard({name, image, types}) {
           className={styles.cardImage}
           component="img"
           image={image}
-          alt="green iguana"
         />
         <CardContent>
           <Box display="flex" justifyContent="space-between" alignItems="center">

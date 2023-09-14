@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import styles from '../../styles/Navbar.module.css'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -54,8 +55,8 @@ export default function Navbar({pokemonFilter}) {
       <AppBar position="static" sx={{backgroundColor: "black"}}>
         <Toolbar>
           <Box display="flex" justifyContent="space-between" width="100%">
-            <Box component='img' src="/assets/pokemon-logo.png" height="3em"/>
-          <Search onChange={(e) => pokemonFilter(e.target.value)}>
+            <a className={styles.logoLink} href="#"><p className={styles.titleLogo}>Poke<span>Project</span></p></a>
+          <Search className={styles.searchInput} onChange={(e) => pokemonFilter(e.target.value)}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
